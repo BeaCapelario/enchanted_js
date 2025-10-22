@@ -1,4 +1,4 @@
-# 🪄 Magical JS ✨  
+# ✨ Magical JS ✨  
 > *Um grimório digital de feitiços em JavaScript — onde lógica e magia se encontram.*
 
 <img align="right" width="150" src="https://i.pinimg.com/originals/23/0d/6f/230d6fe581cf3f5131979c7a9c9ded35.gif">
