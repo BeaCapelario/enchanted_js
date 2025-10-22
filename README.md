@@ -1,8 +1,7 @@
 # 🪄 Magical JS ✨  
 > *Um grimório digital de feitiços em JavaScript — onde lógica e magia se encontram.*
 
-<img align="right" width="150" src="<img width="500" height="477" alt="image" src="https://i.pinimg.com/originals/23/0d/6f/230d6fe581cf3f5131979c7a9c9ded35.gif" />
-">
+<img align="right" width="150" src="https://i.pinimg.com/originals/23/0d/6f/230d6fe581cf3f5131979c7a9c9ded35.gif">
 
 Bem-vindo(a) ao **Magical JS**, um portfólio encantado criado para reunir meus **exercícios de JavaScript**, com direito a **HTML**, **CSS** e uma pitada de **magia pastel-creepy**.  
 Aqui, cada página é um pequeno feitiço de código e cada lista é um capítulo do meu grimório digital 🧙‍♀️💻  
