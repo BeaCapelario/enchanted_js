@@ -1,0 +1,37 @@
+/* -- Variáveis Globais -- */
+:root {
+--cor-texto: #000000; 
+--cor:#080C33; 
+--cor:#296AC8; 
+--cor:#92D2F5; 
+--cor:#F6B4FE; 
+--cor:#CBA1EB; 
+--cor:#403382; 
+--cor:#1D1F5A; 
+}
+
+/* -- Reset Básico -- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -- Estilos do Body (afeta a página inteira) -- */
+body {
+  font-family: var(--fonte-principal);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+/* -- Estilos Globais de Tipografia -- */
+h1, h2, h3 {
+  color: var(--cor-principal);
+}
+
+a {
+  color: var(--cor-principal);
+  text-decoration: none;
+}
+
+/* Color Theme Swatches in Hex */
