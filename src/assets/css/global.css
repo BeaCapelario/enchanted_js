@@ -1,37 +1,85 @@
-/* -- Variáveis Globais -- */
-:root {
---cor-texto: #000000; 
---cor:#080C33; 
---cor:#296AC8; 
---cor:#92D2F5; 
---cor:#F6B4FE; 
---cor:#CBA1EB; 
---cor:#403382; 
---cor:#1D1F5A; 
-}
+@import url('./components/variables.css');
 
-/* -- Reset Básico -- */
-* {
+/* Estilos Base */
+body {
+  width: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/* -- Estilos do Body (afeta a página inteira) -- */
-body {
-  font-family: var(--fonte-principal);
-  color: var(--cor-texto);
-  line-height: 1.6;
-}
-
-/* -- Estilos Globais de Tipografia -- */
-h1, h2, h3 {
-  color: var(--cor-principal);
+  background-color:var(--bg-principal);
+  background-image: url(https://i.pinimg.com/originals/13/a1/22/13a122a75ae1ab3c918041e784aaa264.gif);
+  background-size: cover;
 }
 
 a {
-  color: var(--cor-principal);
+  color: var(--hover-bg);
   text-decoration: none;
 }
 
-/* Color Theme Swatches in Hex */
+a:hover {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* Tipografia */
+
+/* Títulos e Subtítulos*/
+h1 {
+  font-family: var(--fonte-titulo);
+  color: var(--titulo);
+  font-size: 3.0rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: var(--fonte-titulo);
+  color: var(--titulo);
+  font-size: 2.0rem;
+  margin-bottom: 0.8rem;
+}
+
+h3 {
+  font-family: var(--fonte-titulo);
+  color: var(--titulo);
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+h4 {
+  font-family: var(--fonte-titulo);
+  color: var(--titulo);
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Texto Principal */
+p {
+  font-family: var(--fonte-principal);
+  color: var(--texto-secundario);
+  font-size: 1.0rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+li, span {
+  font-family: var(--fonte-principal);
+  color: var(--texto-secundario);
+  font-size: 1.0rem;
+}
+
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+

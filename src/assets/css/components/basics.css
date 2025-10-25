@@ -1,0 +1,63 @@
+@import url("../global.css");
+@import url("./components/variables.css");
+
+
+/* Header Styles */
+header {
+  background: var(--gradiente, linear-gradient(45deg, #667eea, #764ba2));
+  color: var(--titulo, #333);
+  padding: 3rem 1.25rem;
+  text-align: center;
+  box-shadow: 0 0.625rem 1.25rem var(--sombra, rgba(0, 0, 0, 0.1));
+  position: relative;
+}
+
+/* NavBar Styles */
+nav {
+  background-color: var(--bg-secundario);
+  background-size: auto;
+  color: var(--texto-principal);
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav a {
+  display: flex;
+  gap: 2.250rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li{
+    font-size: 1.200rem;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+
+footer {
+  background: var(--gradiente, linear-gradient(45deg, #764ba2, #667eea));
+  color: var(--texto-secundario);
+  text-align: center;
+  padding: 2rem 0.625rem;
+  box-shadow: 0 -0.3125rem 0.9375rem var(--sombra, rgba(0, 0, 0, 0.1));
+  margin-top: auto;
+}

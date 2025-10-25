@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Parkinsans:wght@300..800&display=swap');
+
+/* Variáveis CSS */
+:root {
+  /* Cores */
+  --bg-principal: #FAF6FF;
+  --bg-secundario: #F3E4FF;
+  --gradiente: linear-gradient(135deg, #F5C7F7 0%, #B7A7F3 40%, #E3B3FF 70%, #A585E0 100%);
+  --titulo: #3C2E80;
+  --texto-secundario: #4F437E;
+  --sombra: rgba(98, 67, 153, 0.2);
+  --borda: #D4C3FF;
+  --accent: #E3B3FF;
+  --botao-bg: #A585E0;
+  --botao-texto: #fff;
+  --hover-bg: #8C6EDB;
+ 
+  /* Tipografia */
+  --fonte-titulo: 'Caprasimo', cursive;
+  --fonte-principal: 'Parkinsans', sans-serif;
+
+  /* Espaçamentos */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  
+  /* Breakpoints */
+  --breakpoint-mobile: 768px;
+  --breakpoint-tablet: 1024px;
+}

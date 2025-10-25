@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio JavaScript</title>
-  <link rel="stylesheet" href="./assets/css/global.css">
-</head>
+   <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/components/basics.css" />
+    <link rel="stylesheet" href="./assets/css/components/card-info.css" />
+    <link rel="stylesheet" href="./assets/css/components/button.css" />
+    <link rel="stylesheet" href="./pages/css/style-index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
 
-<body>
-  <header>
-    <nav class="nav">
+  <body>
+    <header>
+      <h1>Bem-vindos ao meu portifólio!</h1>
+    </header>
+
+    <nav>
       <ul>
         <li><a href="#inicio">Início</a></li>
-        <li><a href="aula01.html">UI/UX</a></li>
-        <li><a href="aula02.html">Comandos Básicos</a></li>
+        <li><a href="./pages/html/ui-ux.html">UI/UX</a></li>
+        <li><a href="./pages/html/basicos.html">Comandos Básicos</a></li>
         <li><a href="aula03.html">Arvore DOM</a></li>
         <li><a href="aula04.html">Coleções</a></li>
         <li><a href="atv_extra.html">Atividades Extras</a></li>
         <li><a href="#contatos">Contatos</a></li>
       </ul>
     </nav>
-  </header>
 
-  <main>
-    <img src="" class="fotoPerfil" alt="Foto de perfil de Bea">
+    <main>
+      <section class="inicio">
+        <div class="box">
+          <p>
+            Oi, meu nome é Bea! <br />
+            Faço curso Técnico em Desenvolvimento de Sistemas e apaixonada por
+            tecnologia, estou mergulhando no universo da programação e
+            descobrindo como transformar linhas de código em ideias criativas.
+            <br />
+            Aqui você vai encontrar alguns projetos que desenvolvi em
+            JavaScript, cada um deles faz parte da minha jornada de aprendizado.
+            <br />
+            Minha missão? Continuar explorando, errando, acertando e criando
+            cada vez mais coisas legais para a web!
+          </p>
+        </div>
+      </section>
 
-    <section id="inicio">
-      <h1>Bem-vindos ao meu portifólio!</h1>
-      <div class="box">
-        <p>
-          Oi, meu nome é Bea! <br>
-          Faço curso Técnico em Desenvolvimento de Sistemas e apaixonada por tecnologia, estou mergulhando no
-          universo da programação e descobrindo como transformar linhas de código em ideias criativas. <br>
-          Aqui você vai encontrar alguns projetos que desenvolvi em JavaScript, cada um deles faz parte da
-          minha jornada de aprendizado. <br>
-          Minha missão? Continuar explorando, errando, acertando e criando cada vez mais coisas legais para a web!
-        </p>
-      </div>
-    </section>
+      <img
+        src="https://i.pinimg.com/originals/ec/0f/74/ec0f7484d195c274fd1efea08fec6961.gif"
+        alt="Gif animado de operadores lógicos"
+      />
 
-    <section id="contatos">
-      <h2>Me encontre por aqui:</h2>
-      <div class="social-links">
-        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </section>
-  </main>
+      <section class="contatos">
+        <h2>Me encontre por aqui:</h2>
+        <div class="social-links">
+          <a href="www.linkedin.com/in/beatriz-capelario" target="_blank" aria-label="LinkedIn">
+             <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/BeaCapelario" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Bea – Todos os direitos reservados</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 Bea – Todos os direitos reservados</p>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

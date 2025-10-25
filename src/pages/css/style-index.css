@@ -1,0 +1,81 @@
+
+@import url("../../assets/css/global.css");
+@import url("../../assets/css/components/variables.css");
+
+.inicio {
+  flex: 1; 
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  min-height: 60vh;
+  box-sizing: border-box; 
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.social-links a i {
+  color: var(--primaria);
+  font-size: 3rem;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.inicio {
+  flex: 1; 
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  min-height: 60vh;
+  box-sizing: border-box; 
+}
+
+.box {
+  background: var(--gradiente);
+  border: 2px solid var(--borda);
+  box-shadow: 0 4px 6px var(--sombra);
+  border-radius: 12px;
+  padding: var(--spacing-lg);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.contatos h2{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links {
+  text-align: center; 
+}
+
+.social-links a {
+  display: inline-block; 
+  margin: 0 10px; 
+}
+
+.social-links a i {
+  color: var(--primaria);
+  font-size: 3rem;
+  transition: color 0.3s;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
