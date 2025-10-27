@@ -1,0 +1,61 @@
+@import url("./components/variables.css");
+
+.btn-inicio {
+    background-color: var(--botao-bg);
+    color: var(--botao-texto);
+    border: none;
+    border-radius: 20px;
+    padding: 12px 24px;
+    font-family: 'Parkinsans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 5px 15px var(--sombra);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+.btn-inicio:hover {
+    background-color: var(--botao-bg-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px var(--sombra-hover);
+}
+
+.btn-inicio-flex-center {
+    display: flex;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.btn-categoria {
+    background: var(--botao-bg);
+    color: var(--botao-texto);
+    font-family: "Caprasimo", serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 24px 40px;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 10px 20px rgba(98, 67, 153, 0.3);
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 280px;
+    margin: 10px;
+}
+
+.btn-categoria:hover {
+    background: linear-gradient(135deg, var(--hover-bg), var(--accent));
+    transform: translateY(-6.4px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(98, 67, 153, 0.4), 0 0 16px var(--accent);
+}
+
+.btn-categoria:active {
+    transform: scale(0.97);
+    box-shadow: 0 10px 20px rgba(98, 67, 153, 0.3) inset;
+}
