@@ -6,10 +6,19 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color:var(--bg-principal);
-  background-image: url(https://i.pinimg.com/originals/13/a1/22/13a122a75ae1ab3c918041e784aaa264.gif);
-  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
+
+/* Container principal para conteúdo */
+.main-content {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 
 a {
   color: var(--hover-bg);
@@ -17,7 +26,6 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
   color: var(--accent);
 }
 
@@ -29,7 +37,6 @@ img {
 button {
   cursor: pointer;
   border: none;
-  font-family: inherit;
 }
 
 /* Tipografia */
@@ -38,48 +45,65 @@ button {
 h1 {
   font-family: var(--fonte-titulo);
   color: var(--titulo);
-  font-size: 3.0rem;
-  margin-bottom: 1rem;
+  font-size: 48px;
+  margin-bottom: 16px;
 }
 
 h2 {
   font-family: var(--fonte-titulo);
   color: var(--titulo);
-  font-size: 2.0rem;
-  margin-bottom: 0.8rem;
+  font-size: 32px;
+  margin-bottom: 12.8px;
 }
 
 h3 {
   font-family: var(--fonte-titulo);
   color: var(--titulo);
-  font-size: 1.5rem;
-  margin-bottom: 0.6rem;
+  font-size: 24px;
+  margin-bottom: 9.6px;
 }
 
 h4 {
   font-family: var(--fonte-titulo);
   color: var(--titulo);
-  font-size: 1.2rem;
-  margin-bottom: 0.4rem;
+  font-size: 19.2px;
+  margin-bottom: 6.4px;
 }
 
 /* Texto Principal */
 p {
   font-family: var(--fonte-principal);
   color: var(--texto-secundario);
-  font-size: 1.0rem;
+  font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 li, span {
   font-family: var(--fonte-principal);
   color: var(--texto-secundario);
-  font-size: 1.0rem;
+  font-size: 16px;
 }
 
 ul, ol {
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
+  padding-left: 24px;
+  margin-bottom: 16px;
 }
 
+/* Utilitários para conteúdo centralizado */
+.content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.content-start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  padding-top: 20px;
+}

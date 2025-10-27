@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Parkinsans:wght@300..800&display=swap");
+@import url("../global.css");
+@import url("../components/basics-layout.css");
+@import url("../components/variables.css");
+@import url("../components/button.css");
+
+body {
+  width: auto;
+  margin: auto;
+  padding: 0%;
+  background-color: var(--bg-principal);
+  background-image: url();
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+.basic-header {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 32px;
+  position: relative;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn-categoria {
+  background: var(--botao-bg);
+  color: var(--botao-texto);
+  font-family: "Caprasimo", serif;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 24px 40px;
+  border: none;
+  border-radius: 32px;
+  box-shadow: 0 10px 20px rgba(98, 67, 153, 0.3);
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+  margin: 10px;
+}
+
+.btn-categoria:hover {
+  background: linear-gradient(135deg, var(--hover-bg), var(--accent));
+  transform: translateY(-6.4px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(98, 67, 153, 0.4), 0 0 16px var(--accent);
+}
+
+.btn-categoria:active {
+  transform: scale(0.97);
+  box-shadow: 0 10px 20px rgba(98, 67, 153, 0.3) inset;
+}
+
+
+.btn-inicio {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--botao-bg);
+  color: var(--botao-texto);
+  font-family: 'Parkinsans', sans-serif;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px var(--sombra);
+  text-decoration: none;
+  display: inline-block;
+  z-index: 1002; 
+}
+
+.btn-inicio:hover {
+  background-color: var(--botao-bg-hover);
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 8px 20px var(--sombra-hover);
+}

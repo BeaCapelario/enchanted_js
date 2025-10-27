@@ -1,15 +1,20 @@
 @import url("../global.css");
 @import url("./components/variables.css");
 
-
 /* Header Styles */
 header {
   background: var(--gradiente, linear-gradient(45deg, #667eea, #764ba2));
   color: var(--titulo, #333);
-  padding: 3rem 1.25rem;
+  padding: 48px 20px;
   text-align: center;
-  box-shadow: 0 0.625rem 1.25rem var(--sombra, rgba(0, 0, 0, 0.1));
+  box-shadow: 0 10px 20px var(--sombra, rgba(0, 0, 0, 0.1));
   position: relative;
+}
+
+/* Header com bordas arredondadas na parte inferior */
+.header-rounded {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 /* NavBar Styles */
@@ -17,17 +22,17 @@ nav {
   background-color: var(--bg-secundario);
   background-size: auto;
   color: var(--texto-principal);
-  padding: 1rem 1.25rem;
+  padding: 16px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 16px;
 }
 
 nav a {
   display: flex;
-  gap: 2.250rem;
+  gap: 36px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -39,25 +44,37 @@ nav a:hover {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 24px;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
   margin: 0;
 }
 
-nav li{
-    font-size: 1.200rem;
-    font-weight: bold;
+nav li {
+  font-size: 19.2px;
+  font-weight: bold;
 }
 
-/* Footer Styles */
-
+/* Footer Styles - ENCOSTADO NO FINAL */
 footer {
   background: var(--gradiente, linear-gradient(45deg, #764ba2, #667eea));
   color: var(--texto-secundario);
   text-align: center;
-  padding: 2rem 0.625rem;
-  box-shadow: 0 -0.3125rem 0.9375rem var(--sombra, rgba(0, 0, 0, 0.1));
-  margin-top: auto;
+  box-shadow: 0 -5px 15px var(--sombra, rgba(0, 0, 0, 0.1));
+  width: 100%;
+  padding: 20px 10px;
+  margin-top: auto; /* Isso faz ele encostar no final */
+}
+
+/* Estrutura básica de página com todos os componentes */
+.page-with-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-with-layout main {
+  flex: 1;
+  width: 100%;
 }

@@ -1,40 +1,28 @@
-
 @import url("../../assets/css/global.css");
 @import url("../../assets/css/components/variables.css");
 
 .inicio {
-  flex: 1; 
+  flex: 1;
   width: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
-  min-height: 60vh;
-  box-sizing: border-box; 
+  padding: 16px 24px 48px 24px;
+  min-height: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
 }
 
-
-.social-links {
+/* Container do card centralizado */
+.card-container {
   display: flex;
   justify-content: center;
-  gap: 1rem;
   align-items: center;
-}
-
-.social-links a i {
-  color: var(--primaria);
-  font-size: 3rem;
-  transition: color 0.3s;
-  cursor: pointer;
-}
-
-.inicio {
-  flex: 1; 
   width: 100%;
-  max-width: 1200px; 
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-  min-height: 60vh;
-  box-sizing: border-box; 
+  margin: 0 0 32px 0;
 }
 
 .box {
@@ -42,40 +30,107 @@
   border: 2px solid var(--borda);
   box-shadow: 0 4px 6px var(--sombra);
   border-radius: 12px;
-  padding: var(--spacing-lg);
+  padding: 24px;
   text-align: center;
   position: relative;
   z-index: 1;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contatos h2{
-  margin-top: 2rem;
+/* IMAGEM CENTRALIZADA CORRIGIDA */
+.box img {
+  display: block;
+  margin: 0 auto 16px auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+  align-self: center; /* GARANTE CENTRALIZAÇÃO */
+}
+
+.contatos {
+  margin: 24px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contatos h2 {
+  margin-top: 16px;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 24px;
+  text-align: center;
+  width: 100%;
 }
 
+/* ÍCONES MAIORES E CENTRALIZADOS */
 .social-links {
-  text-align: center; 
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  margin-top: 24px;
+  width: 100%;
 }
 
 .social-links a {
-  display: inline-block; 
-  margin: 0 10px; 
+  display: inline-block;
+  margin: 0;
 }
 
 .social-links a i {
   color: var(--primaria);
-  font-size: 3rem;
-  transition: color 0.3s;
+  font-size: 64px;
+  transition: color 0.3s, transform 0.3s;
 }
 
-img{
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+.social-links a i:hover {
+  color: var(--accent);
+  transform: scale(1.2);
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+  .inicio {
+    padding: 8px 16px 32px 16px;
+  }
+  
+  .box {
+    padding: 16px;
+    max-width: 90%;
+  }
+  
+  .social-links {
+    gap: 20px;
+  }
+  
+  .social-links a i {
+    font-size: 56px;
+  }
+  
+  .contatos h2 {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .box img {
+    max-height: 280px;
+  }
+}
 
-
+@media (max-width: 480px) {
+  .social-links a i {
+    font-size: 48px;
+  }
+  
+  .social-links {
+    gap: 15px;
+  }
+}
