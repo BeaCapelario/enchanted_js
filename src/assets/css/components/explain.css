@@ -4,4 +4,44 @@
 @import url("../components/basics-layout.css");
 @import url("../components/buttons.css");
 @import url("../components/cards.css");
+@import url("../components/tables.css");
 
+.main-explain-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 52px;
+  position: relative;
+}
+
+.basic-header {
+  background: var(--gradiente, linear-gradient(45deg, #667eea, #764ba2));
+  color: var(--titulo, #fff);
+  padding: 48px 20px;
+  text-align: center;
+  box-shadow: 0 10px 20px var(--sombra, rgba(0, 0, 0, 0.1));
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.basic-header h1 {
+  margin: 0;
+  font-family: var(--fonte-titulo);
+  font-size: 48px;
+  color: inherit;
+}
+
+p {
+  font-size: 18px;
+  font-family: var(--fonte-texto);
+}
+
+ul li {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: var(--fonte-texto);
+}

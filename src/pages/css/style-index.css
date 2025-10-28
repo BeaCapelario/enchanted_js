@@ -16,7 +16,7 @@
   text-align: center;
 }
 
-/* Container do card centralizado */
+
 .card-container {
   display: flex;
   justify-content: center;
@@ -70,7 +70,7 @@
   width: 100%;
 }
 
-/* ÍCONES MAIORES E CENTRALIZADOS */
+
 .social-links {
   display: flex;
   justify-content: center;
@@ -96,7 +96,7 @@
   transform: scale(1.2);
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   .inicio {
     padding: 8px 16px 32px 16px;

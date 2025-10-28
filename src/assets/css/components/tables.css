@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Parkinsans:wght@300..800&display=swap');
+@import url('./variables.css'); 
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 32px 0; 
+  background: var(--bg-principal);
+  border-radius: 16px; 
+  overflow: hidden;
+  box-shadow: 0 4px 12px var(--sombra); 
+  font-family: var(--fonte-principal);
+}
+
+.table th {
+  background: var(--gradiente);
+  color: var(--titulo);
+  padding: 19.2px 24px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 17.6px; 
+  border-bottom: 2px solid var(--borda);
+}
+
+.table td {
+  padding: 16px 24px; 
+  border-bottom: 1px solid var(--borda);
+  color: var(--texto-secundario);
+  font-weight: 500;
+}
+
+

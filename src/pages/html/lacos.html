@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laços de Repetição</title>
+    <link rel="stylesheet" href="../../assets/css/components/explain.css" />
+</head>
+
+<body>
+    <header class="basic-header">
+        <h1>Laços de Repetição</h1>
+    </header>
+
+    <main class="main-explain-container">
+        <section class="card-container-2">
+            <div class="card-info-3">
+                <h2>Definição</h2>
+                <p>
+                    Os laços de repetição ou loops em JavaScript são estruturas que permitem executar um bloco de código
+                    várias
+                    vezes, com base em uma condição ou contagem. Eles são fundamentais para automatizar tarefas
+                    repetitivas e
+                    reduzir a duplicação de código.
+                </p>
+            </div>
+
+            <div class="card-info-3">
+                <h2>Como funcionam?</h2>
+                <p>
+                    Um loop avalia uma condição antes (ou depois) de cada iteração e executa o código enquanto a
+                    condição for
+                    verdadeira. Alguns loops usam contador, outros percorrem coleções de elementos como arrays ou
+                    strings.
+                </p>
+            </div>
+        </section>
+
+        <h2>Principais Laços de Repetição</h2>
+        <section>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Laço</th>
+                        <th>Descrição</th>
+                        <th>Sintaxe</th>
+                        <th>Exemplo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>for</td>
+                        <td>Executa um bloco um número determinado de vezes</td>
+                        <td>for(inicialização; condição; incremento)</td>
+                        <td>for(let i=0; i<5; i++){ console.log(i); }</td>
+                    </tr>
+                    <tr>
+                        <td>while</td>
+                        <td>Executa enquanto a condição for verdadeira</td>
+                        <td>while(condição)</td>
+                        <td>let i=0; while(i<5){ console.log(i); i++; }</td>
+                    </tr>
+                    <tr>
+                        <td>do...while</td>
+                        <td>Executa pelo menos uma vez, depois verifica a condição</td>
+                        <td>do{ bloco } while(condição)</td>
+                        <td>let i=0; do{ console.log(i); i++; } while(i<5);< /td>
+                    </tr>
+                    <tr>
+                        <td>for...of</td>
+                        <td>Percorre elementos de arrays ou strings</td>
+                        <td>for(let item of array)</td>
+                        <td>for(let x of [1,2,3]){ console.log(x); }</td>
+                    </tr>
+                    <tr>
+                        <td>for...in</td>
+                        <td>Percorre propriedades de objetos</td>
+                        <td>for(let chave in objeto)</td>
+                        <td>let obj={a:1,b:2}; for(let k in obj){ console.log(k); }</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <img src="https://i.pinimg.com/originals/11/31/16/113116538c41667ac40fbb8bb5f2b1f0.gif"
+            alt="Gif animado relacionado a lógica">
+
+        </section>
+    </main>
+
+    <a class="btn-categoria" href="#">Exercícios</a>
+    <a class="btn-inicio" href="../../index.html">Início</a>
+
+    <footer>
+        <p>&copy; 2025 Bea – Todos os direitos reservados</p>
+    </footer>
+</body>
+
+</html>

@@ -1,54 +1,52 @@
-@import url("../global.css");
-@import url("./components/variables.css");
-
-/* Header Styles */
+@import url("../components/variables.css");
 header {
   background: var(--gradiente, linear-gradient(45deg, #667eea, #764ba2));
   color: var(--titulo, #333);
-  padding: 48px 20px;
+  padding: var(--espacamento-xl) 20px;
   text-align: center;
   box-shadow: 0 10px 20px var(--sombra, rgba(0, 0, 0, 0.1));
   position: relative;
+  width: 100%;
+  margin: 0;
 }
 
-/* Header com bordas arredondadas na parte inferior */
-.header-rounded {
+.header-rounded, .basic-header {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* NavBar Styles */
+/* Navegação */
 nav {
   background-color: var(--bg-secundario);
-  background-size: auto;
   color: var(--texto-principal);
-  padding: 16px 20px;
+  padding: var(--espacamento-sm) 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: var(--espacamento-sm);
+  width: 100%;
 }
 
-nav a {
+.nav-links {
   display: flex;
   gap: 36px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-nav a:hover {
-  color: var(--accent);
-}
-
 nav ul {
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: var(--espacamento-md);
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 nav li {
@@ -56,7 +54,7 @@ nav li {
   font-weight: bold;
 }
 
-/* Footer Styles - ENCOSTADO NO FINAL */
+/* Footer */
 footer {
   background: var(--gradiente, linear-gradient(45deg, #764ba2, #667eea));
   color: var(--texto-secundario);
@@ -64,17 +62,5 @@ footer {
   box-shadow: 0 -5px 15px var(--sombra, rgba(0, 0, 0, 0.1));
   width: 100%;
   padding: 20px 10px;
-  margin-top: auto; /* Isso faz ele encostar no final */
-}
-
-/* Estrutura básica de página com todos os componentes */
-.page-with-layout {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.page-with-layout main {
-  flex: 1;
-  width: 100%;
+  margin-top: auto;
 }

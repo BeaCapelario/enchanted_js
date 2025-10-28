@@ -1,117 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coleções</title>
 
     <link rel="stylesheet" href="../../assets/css/components/explain.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="basic-header">
-        <h1>Coleções</h1>
+      <h1>Coleções</h1>
     </header>
 
     <main class="main-explain-container">
-        <section class="card-info-3">
-            <h2>Tipos de Variáveis</h2>
-            <p>Em JavaScript, contamos com 3 tipos de variáveis:</p>
-            <ul>
-                <li><strong>let</strong>: variáveis locais, disponíveis apenas dentro de um bloco.</li>
-                <li><strong>const</strong>: valores fixos, que não podem ser reatribuídos durante a execução.</li>
-                <li><strong>var</strong>: possui escopo global, mas caiu em desuso após o ES6.</li>
-            </ul>
-        </section>
+      <section class="card-container-2">
+        <div class="card-info-3">
+          <h2>Tipos de Variáveis</h2>
+          <p>Em JavaScript, contamos com 3 tipos de variáveis:</p>
+          <ul>
+            <li>
+              <strong>let</strong>: variáveis locais, disponíveis apenas dentro
+              de um bloco.
+            </li>
+            <li>
+              <strong>const</strong>: valores fixos, que não podem ser
+              reatribuídos durante a execução.
+            </li>
+            <li>
+              <strong>var</strong>: possui escopo global, mas caiu em desuso
+              após o ES6.
+            </li>
+          </ul>
+        </div>
 
-        <br/>
+        <div class="card-info-3">
+          <h2>O que são Coleções?</h2>
+          <p>
+            São conjuntos de valores armazenados em uma única variável. A
+            manipulação desses arrays tem suas próprias ferramentas e métodos.
+            Através de colchetes e valores separados por vírgula, conseguimos
+            organizar os dados em lista.
+          </p>
+        </div>
 
-        <section class="card-info-3">
-            <h2>O que são Coleções?</h2>
-            <p>
-                São conjuntos de valores armazenados em uma única variável.
-                A manipulação desses arrays tem suas próprias ferramentas e métodos.
-                Através de colchetes e valores separados por vírgula, conseguimos organizar os dados em lista.
-            </p>
-        </section>
+        <div class="card-info-3">
+          <h2>Componentes</h2>
+          <ul>
+            <li>
+              <strong>Array</strong>: a coleção de valores sobre a qual
+              desejamos iterar.
+            </li>
+            <li>
+              <strong>Callback Function</strong>: função executada para cada
+              elemento do array.
+            </li>
+            <li>
+              <strong>Current Value</strong>: valor atual do elemento no array.
+            </li>
+            <li>
+              <strong>Index</strong>: posição (índice) do elemento atual no
+              array.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-        <br/>
-        
-        <section class="card-info-3">
-            <h2>Componentes</h2>
-            <ul>
-                <li><strong>Array</strong>: a coleção de valores sobre a qual desejamos iterar.</li>
-                <li><strong>Callback Function</strong>: função executada para cada elemento do array.</li>
-                <li><strong>Current Value</strong>: valor atual do elemento no array.</li>
-                <li><strong>Index</strong>: posição (índice) do elemento atual no array.</li>
-            </ul>
-        </section>
-        
-        <br/>
+      <br />
 
-        <section class="card-container">
-            <h2>Métodos de Array</h2>
+      <h2>Métodos de Array</h2>
+      <section class="card-container-2">
+        <div class="card">
+          <h3>forEach</h3>
+          <p>
+            O <strong>forEach()</strong> permite iterar sobre cada elemento de
+            um array e executar uma função específica. É uma forma prática de
+            percorrer e manipular arrays sem usar o loop
+            <code>for</code> tradicional.
+          </p>
+          <img
+            src="../../assets/imagens/foreach.jpeg"
+            alt="Exemplo de uso do forEach"
+          />
+        </div>
 
-            <div class="card">
-                <h3>forEach</h3>
-                <p>
-                    O <strong>forEach()</strong> permite iterar sobre cada elemento de um array e executar uma função
-                    específica.
-                    É uma forma prática de percorrer e manipular arrays sem usar o loop <code>for</code> tradicional.
-                </p>
-                <img src="./imagens/foreach.jpeg" alt="Exemplo de uso do forEach">
-            </div>
+        <div class="card">
+          <h3>map()</h3>
+          <p>
+            O método <strong>map()</strong> percorre o array e cria um novo com
+            o resultado da função callback aplicada a cada elemento.
+          </p>
+          <img
+            src="../../assets/imagens/map.jpeg"
+            alt="Exemplo de uso do map"
+          />
+        </div>
 
-            <div class="card">
-                <h3>map()</h3>
-                <p>
-                    O método <strong>map()</strong> percorre o array e cria um novo com o resultado da função callback
-                    aplicada a
-                    cada elemento.
-                </p>
-                <img src="./imagens/map.jpeg" alt="Exemplo de uso do map">
-            </div>
+        <div class="card">
+          <h3>filter()</h3>
+          <p>
+            O <strong>filter()</strong> cria um novo array contendo apenas os
+            elementos que passam em um teste lógico definido por você.
+          </p>
+          <img
+            src="../../assets/imagens/filter.jpeg"
+            alt="Exemplo de uso do filter"
+          />
+        </div>
 
-            <div class="card">
-                <h3>filter()</h3>
-                <p>
-                    O <strong>filter()</strong> cria um novo array contendo apenas os elementos que passam em um teste
-                    lógico
-                    definido por você.
-                </p>
-                <img src="./imagens/filter.jpeg" alt="Exemplo de uso do filter">
-            </div>
+        <div class="card">
+          <h3>find()</h3>
+          <p>
+            O <strong>find()</strong> percorre o array e retorna o primeiro
+            elemento que satisfaz uma condição específica.
+          </p>
+          <img
+            src="../../assets/imagens/find.jpeg"
+            alt="Exemplo de uso do find"
+          />
+        </div>
 
-            <div class="card">
-                <h3>find()</h3>
-                <p>
-                    O <strong>find()</strong> percorre o array e retorna o primeiro elemento que satisfaz uma condição
-                    específica.
-                </p>
-                <img src="./imagens/find.jpeg" alt="Exemplo de uso do find">
-            </div>
+        <div class="card">
+          <h3>spread</h3>
+          <p>
+            O operador <strong>spread (...)</strong> permite espalhar os
+            elementos de um array, tornando possível combinar ou clonar arrays
+            facilmente.
+          </p>
+          <img
+            src="../../assets/imagens/spread.jpeg"
+            alt="Exemplo de uso do spread"
+          />
+        </div>
+      </section>
 
-            <div class="card">
-                <h3>spread</h3>
-                <p>
-                    O operador <strong>spread (...)</strong> permite espalhar os elementos de um array,
-                    tornando possível combinar ou clonar arrays facilmente.
-                </p>
-                <img src="./imagens/spread.jpeg" alt="Exemplo de uso do spread">
-            </div>
-        </section>
-
-        <a class="btn-categoria" href="arrays.html">Exercícios</a>
+      <a class="btn-categoria" href="#">Exercícios</a>
     </main>
-    
+
     <a class="btn-inicio" href="../../index.html">Início</a>
 
     <footer>
-        <p>&copy; 2025 Bea – Todos os direitos reservados</p>
+      <p>&copy; 2025 Bea – Todos os direitos reservados</p>
     </footer>
-
-    
-</body>
-
+  </body>
 </html>

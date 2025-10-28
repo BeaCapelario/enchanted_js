@@ -1,52 +1,117 @@
-@import url('./components/variables.css');
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Parkinsans:wght@300..800&display=swap");
 
-/* Estilos Base */
-body {
+/* ===== VARIÁVEIS ===== */
+:root {
+  /* Cores */
+  --bg-primario: #ffffff;
+  --bg-secundario: #f8f9fa;
+  --texto-principal: #333333;
+  --texto-secundario: #666666;
+  --titulo: #222222;
+  --accent: #667eea;
+  --hover-bg: #764ba2;
+  --botao-bg: #667eea;
+  --botao-texto: #ffffff;
+  --botao-bg-hover: #764ba2;
+  --sombra: rgba(0, 0, 0, 0.1);
+  --sombra-hover: rgba(0, 0, 0, 0.2);
+  --borda: #e0e0e0;
+
+  /* Gradientes */
+  --gradiente: linear-gradient(45deg, #667eea, #764ba2);
+
+  /* Fontes */
+  --fonte-titulo: 'Caprasimo', serif;
+  --fonte-principal: 'Parkinsans', sans-serif;
+
+  /* Espaçamentos */
+  --espacamento-xs: 8px;
+  --espacamento-sm: 16px;
+  --espacamento-md: 24px;
+  --espacamento-lg: 32px;
+  --espacamento-xl: 48px;
+}
+
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
   width: 100%;
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
 }
 
-/* Container principal para conteúdo */
-.main-content {
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonte-principal, sans-serif);
+}
+
+/* ===== ESTRUTURAS DE LAYOUT ===== */
+.page-with-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-content, .page-with-layout main {
   flex: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-
-a {
-  color: var(--hover-bg);
-  text-decoration: none;
+.main-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: var(--espacamento-lg);
+  position: relative;
 }
 
-a:hover {
-  color: var(--accent);
+.content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.content-start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  padding-top: 20px;
 }
 
-button {
-  cursor: pointer;
-  border: none;
+/* Grid para cards/buttons */
+.buttons, .cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Tipografia */
-
-/* Títulos e Subtítulos*/
+/* ===== TIPOGRAFIA ===== */
 h1 {
   font-family: var(--fonte-titulo);
   color: var(--titulo);
   font-size: 48px;
-  margin-bottom: 16px;
+  margin-bottom: var(--espacamento-sm);
 }
 
 h2 {
@@ -70,13 +135,12 @@ h4 {
   margin-bottom: 6.4px;
 }
 
-/* Texto Principal */
 p {
   font-family: var(--fonte-principal);
   color: var(--texto-secundario);
   font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 16px;
+  margin-bottom: var(--espacamento-sm);
 }
 
 li, span {
@@ -86,24 +150,23 @@ li, span {
 }
 
 ul, ol {
-  padding-left: 24px;
-  margin-bottom: 16px;
+  padding-left: var(--espacamento-md);
+  margin-bottom: var(--espacamento-sm);
 }
 
-/* Utilitários para conteúdo centralizado */
-.content-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
+a {
+  color: var(--hover-bg);
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.content-start {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  flex: 1;
-  padding-top: 20px;
+a:hover {
+  color: var(--accent);
+}
+
+
+
+button {
+  cursor: pointer;
+  border: none;
 }
