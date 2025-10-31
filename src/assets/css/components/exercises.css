@@ -5,4 +5,68 @@
 @import url("../components/buttons.css");
 @import url("../components/cards.css");
 
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Parkinsans:wght@300..800&display=swap");
+@import url("../components/variables.css");
+@import url("../global.css");
+@import url("../components/basics-layout.css");
+@import url("../components/buttons.css");
+@import url("../components/cards.css");
+
+.exercicios {
+    margin: 20px;
+    padding: 20px;
+}
+
+.grid-container {
+    min-height: 50vh;
+    margin: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    background: var(--bg-secundario);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    box-shadow: 0 8px 20px var(--sombra);
+    padding: 25px;
+    font-family: 'Parkinsans', sans-serif;
+    font-size: 1.1em;
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid-item:not(:only-child):not(:empty) {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.grid-item ul {
+    margin: 15px 0;
+    padding-left: 25px;
+    width: 100%;
+    text-align: left;
+    align-self: flex-start;
+}
+
+
+.btn-grid {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.btn-grid .btn-inicio {
+    margin: 0 3px; 
+}
 

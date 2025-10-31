@@ -8,9 +8,8 @@
 .basic-header {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-  display: block; /* garante que ocupe a largura total */
-  width: 100%;
-  margin: 0; /* remove possíveis margens externas */
+  display: block; 
+  margin: 0; 
   box-sizing: border-box;
 }
 

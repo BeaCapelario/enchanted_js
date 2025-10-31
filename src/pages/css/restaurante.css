@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Bungee&family=Cantora+One&family=Comic+Relief:wght@400;700&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=New+Rocker&display=swap');
+
+body {
+    font-size: 18px;
+    font-family: 'Comic Relief', system-ui;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+    background-image: url('https://i.pinimg.com/originals/b7/44/9d/b7449d847c1f39c43f1e180c1120838d.gif');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;  /* permite adicionar elementos acima/abaixo se precisar */
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    background-color: rgba(224, 210, 240, 0.95);
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(49, 48, 49, 0.5);
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 30px;
+    color: #630baa;
+    font-family: 'Comic Relief', system-ui;
+    text-shadow: 0px 4px 4px #58515f;
+    margin-bottom: 20px;
+}
+
+.menu, .quantidade {
+    margin: 10px 0;
+}
+
+select, input {
+    padding: 10px;
+    font-size: 14px; /* maior para melhor leitura */
+    margin-left: 10px;
+    border-radius: 8px;
+    border: 1px solid #999;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 14px;
+    font-family: 'Comic Relief', system-ui;
+    background-image: url('https://i.pinimg.com/736x/ca/23/b6/ca23b617b4aef807ba76506f6e9bcd0a.jpg');
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.footer {
+    color: #FFFFFF;
+    text-align: center;
+    padding: 30px 10px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;                
+    flex-direction: column;       
+    align-items: center;          
+    justify-content: center;      
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-img {
+    border-radius: 30px;
+    max-width: 90%;
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 15px rgba(72, 60, 140, 0.4)); 
+}
+
+.btn-voltar {
+  position: fixed;          /* fixa o botão na tela */
+  bottom: 30px;             /* distância do rodapé */
+  left: 50%;                /* centraliza horizontalmente */
+  transform: translateX(-50%); /* ajusta o centro do botão */
+  padding: 18px 30px;
+  background-color: #403382;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 20px;
+  font-family: "Parkinsans", sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 5px 15px rgba(72, 60, 140, 0.3), 0 0 10px rgba(246, 180, 254, 0.2);
+  z-index: 1000; /* garante que fique sobre outros elementos */
+}
+
+.btn-voltar:hover {
+  background-color: #1D1F5A;
+  transform: translateX(-50%) scale(1.08);
+  box-shadow: 0 8px 20px rgba(72, 60, 140, 0.4), 0 0 15px rgba(246, 180, 254, 0.3);
+}
+

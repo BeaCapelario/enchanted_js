@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Parkinsans:wght@300..800&display=swap');
+
+body {
+    background-image: url("https://i.pinimg.com/originals/ce/31/0c/ce310c2f68850080fdcd49f5275e8416.gif");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
+    font-family: "Parkinsans", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #080C33; 
+}
+
+h1 {
+    text-align: center;
+    font-family: "Caprasimo", serif;
+    font-size: 3rem;
+    color: #403382;
+    margin-top: 50px;
+    text-shadow: 2px 2px 8px #92D2F5;
+}
+
+hr {
+    width: 50%;
+    margin: 20px auto;
+    border: 2px solid #CBA1EB;
+    border-radius: 5px;
+}
+
+form {
+    background: linear-gradient(135deg, #CBA1EB, #F6B4FE);
+    padding: 40px 30px;
+    max-width: 600px;
+    margin: 30px auto 60px;
+    border-radius: 40px;
+    box-shadow: 0 15px 30px rgba(72, 60, 140, 0.25);
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    display: block;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-top: 5px;
+    border: 2px solid #403382;
+    border-radius: 15px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #1D1F5A;
+    box-shadow: 0 0 8px rgba(72, 60, 140, 0.5);
+}
+
+p {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+button {
+    background-color: #403382;
+    color: #fff;
+    padding: 15px 30px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-family: "Parkinsans", sans-serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(72, 60, 140, 0.3), 0 0 10px rgba(246, 180, 254, 0.2);
+}
+
+button:hover {
+    background-color: #1D1F5A;
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(72, 60, 140, 0.4), 0 0 15px rgba(246, 180, 254, 0.3);
+}
+
+
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-img {
+    border-radius: 30px;
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 15px rgba(72, 60, 140, 0.4));
+}
+
+.btn-voltar {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #403382;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 1rem;
+    box-shadow: 0 5px 15px rgba(72, 60, 140, 0.3), 0 0 10px rgba(246, 180, 254, 0.2);
+}
+
+.btn-voltar:hover {
+    background-color: #1D1F5A;
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(72, 60, 140, 0.4), 0 0 15px rgba(246, 180, 254, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    form {
+        padding: 30px 20px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+

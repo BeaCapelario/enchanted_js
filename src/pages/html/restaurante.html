@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="../css/restaurante.css">
+</head>
+<body>
+    <main class="container">
+        <section class="menu">
+            <h1>⋆ Docinhos da Bea ˚｡⋆୨୧˚</h1>
+            <label>Selecione o pedido:</label>
+            <select id='prato'>
+                <option value="0">Selecione seu pedido</option>
+                <option value="10">Cookie R$10,00</option>
+                <option value="15">Cupcake R$15,00</option>
+                <option value="8">Brigadeiro R$8,00</option>
+                <option value="8">Palha Italiana R$8,00</option>
+                <option value="20">Pudim R$20,00</option>
+                <option value="30">Bolo R$30,00</option>
+                <option value="10">Donuts R$10,00</option>
+                <option value="25">Flan R$25,00</option>
+                <option value="40">Foundant de Chocolate R$40,00</option>
+                <option value="15">Petit Gateau R$15,00</option>
+            </select>
+            <div class="quantidade">
+                <label>Quantidade</label>
+                <input type="number" id="quantidade" max="10" value="1" required />
+            </div>
+            <button onclick="calcularTotal()">Calcular</button>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+   <footer class="footer">
+        <div class="footer-btn">
+            <a class="btn-voltar" href="../../index.html">Início</a>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/restaurante.js"></script>
+</body>
+</html>
