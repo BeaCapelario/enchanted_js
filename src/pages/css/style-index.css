@@ -13,18 +13,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  text-align: center;
 }
 
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 0 0 32px 0;
-}
-
+/* BOX DA APRESENTAÇÃO */
 .box {
   background: var(--gradiente);
   border: 2px solid var(--borda);
@@ -36,66 +27,64 @@
   z-index: 1;
   max-width: 500px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
 }
 
-/* IMAGEM CENTRALIZADA CORRIGIDA */
-.box img {
-  display: block;
-  margin: 0 auto 16px auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 350px;
-  object-fit: contain;
-  align-self: center; /* GARANTE CENTRALIZAÇÃO */
-}
-
-.contatos {
-  margin: 24px 0;
+/* SEÇÃO DE CONTATOS - AGORA CORRETA */
+section[class="#contatos"] {
+  margin: 40px 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-}
-
-.contatos h2 {
-  margin-top: 16px;
-  display: flex;
   justify-content: center;
-  gap: 24px;
   text-align: center;
-  width: 100%;
 }
 
+section[class="#contatos"] h2 {
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+  font-family: var(--fonte-titulo);
+  color: var(--titulo);
+  font-size: 32px;
+}
 
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 30px;
   align-items: center;
-  margin-top: 24px;
+  gap: 30px;
+  margin-top: 20px;
   width: 100%;
 }
 
 .social-links a {
-  display: inline-block;
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 .social-links a i {
-  color: var(--primaria);
+  color: var(--accent);
   font-size: 64px;
   transition: color 0.3s, transform 0.3s;
 }
 
 .social-links a i:hover {
-  color: var(--accent);
+  color: var(--hover-bg);
   transform: scale(1.2);
 }
 
+/* IMAGEM CENTRALIZADA */
+main img {
+  display: block;
+  margin: 40px auto;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+}
 
 @media (max-width: 768px) {
   .inicio {
@@ -115,13 +104,9 @@
     font-size: 56px;
   }
   
-  .contatos h2 {
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  .box img {
-    max-height: 280px;
+  main img {
+    max-width: 250px;
+    margin: 30px auto;
   }
 }
 
@@ -132,5 +117,13 @@
   
   .social-links {
     gap: 15px;
+  }
+  
+  section[class="#contatos"] h2 {
+    font-size: 28px;
+  }
+  
+  main img {
+    max-width: 200px;
   }
 }

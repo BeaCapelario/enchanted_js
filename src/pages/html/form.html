@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulário de Cadastro</h1>
+            <p class="subtitle">Preencha todos os campos obrigatórios</p>
+        </header>
+        
+        <main class="form-container">
+            <form id="formCadastro" class="cadastro-form">
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                    <span class="error-message" id="nomeError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="endereco">Endereço *</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço completo">
+                    <span class="error-message" id="enderecoError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Sexo *</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="sexo" value="masculino">
+                            <span class="radio-custom"></span>
+                            Masculino
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="sexo" value="feminino">
+                            <span class="radio-custom"></span>
+                            Feminino
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="sexo" value="outro">
+                            <span class="radio-custom"></span>
+                            Outro
+                        </label>
+                    </div>
+                    <span class="error-message" id="sexoError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone *</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 0000-0000">
+                    <span class="error-message" id="telefoneError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="celular">Celular *</label>
+                    <input type="tel" id="celular" name="celular" placeholder="(00) 00000-0000">
+                    <span class="error-message" id="celularError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com">
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Enviar Cadastro</button>
+                    <button type="button" class="btn-clear" onclick="limparFormulario()">Limpar</button>
+                    <a href="../html/arvore-dom.html" class="btn-back">Voltar</a>
+                </div>
+            </form>
+        </main>
+
+       
+    </div>
+
+    <script src="../../assets/js/form.js"></script>
+</body>
+</html>
