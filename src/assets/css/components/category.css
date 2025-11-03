@@ -56,6 +56,7 @@
   background: linear-gradient(135deg, var(--hover-bg), var(--accent));
   transform: translateY(-6.4px) scale(1.05);
   box-shadow: 0 20px 40px rgba(98, 67, 153, 0.4), 0 0 16px var(--accent);
+  cursor: url('../../imagens/cursor/Normal\ Select\ 5.cur'), pointer;
 }
 
 .btn-categoria:active {
@@ -88,4 +89,13 @@
   background-color: var(--botao-bg-hover);
   transform: translateX(-50%) translateY(-2px);
   box-shadow: 0 8px 20px var(--sombra-hover);
+  cursor: url('../../imagens/cursor/Normal\ Select\ 5.cur'), pointer;
+}
+
+img{
+  display: block;
+  margin: 40px auto;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
 }

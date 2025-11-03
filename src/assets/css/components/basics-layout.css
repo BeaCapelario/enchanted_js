@@ -32,6 +32,7 @@ nav {
 }
 
 .nav-links {
+  cursor: url('../../imagens/cursor/Normal\ Select\ 5.cur'), pointer;
   display: flex;
   gap: 36px;
   flex-wrap: wrap;
@@ -53,6 +54,7 @@ nav li {
   font-size: 19.2px;
   font-weight: bold;
 }
+
 
 /* Footer */
 footer {

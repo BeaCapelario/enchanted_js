@@ -30,6 +30,7 @@
   background: var(--accent);
   box-shadow: 0 12px 24px rgba(98, 67, 153, 0.35);
   transform: scale(1.03);
+  cursor: url('../../imagens/cursor/Normal\ Select\ 5.cur'), pointer;
 }
 
 .card-info-2 {

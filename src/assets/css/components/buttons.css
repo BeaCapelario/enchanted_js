@@ -23,6 +23,7 @@
     background-color: var(--botao-bg-hover);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px var(--sombra-hover);
+    cursor: url('../../imagens/cursor/Normal\ Select\ 5.cur'), pointer;
 }
 
 .btn-inicio-flex-center {
@@ -41,18 +42,19 @@
     border: none;
     border-radius: 32px;
     box-shadow: 0 10px 20px rgba(98, 67, 153, 0.3);
-    cursor: pointer;
+    
     text-align: center;
     transition: all 0.3s ease;
     width: 100%;
     max-width: 280px;
-    margin: 10px;
+    margin: auto;
 }
 
 .btn-categoria:hover {
     background: linear-gradient(135deg, var(--hover-bg), var(--accent));
     transform: translateY(-6.4px) scale(1.05);
     box-shadow: 0 20px 40px rgba(98, 67, 153, 0.4), 0 0 16px var(--accent);
+   cursor: url('../../imagens/cursor/Normal\ Select\ 5.cur'), pointer;
 }
 
 .btn-categoria:active {

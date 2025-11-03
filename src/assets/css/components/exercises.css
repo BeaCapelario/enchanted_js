@@ -40,7 +40,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    cursor: pointer;
+    cursor: url('../../imagens/cursor/Normal\ Select\ 5.cur'), pointer;
 }
 
 .grid-item:not(:only-child):not(:empty) {

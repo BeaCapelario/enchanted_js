@@ -15,7 +15,6 @@
   justify-content: flex-start;
 }
 
-/* BOX DA APRESENTAÇÃO */
 .box {
   background: var(--gradiente);
   border: 2px solid var(--borda);
@@ -30,7 +29,6 @@
   margin: 0 auto;
 }
 
-/* SEÇÃO DE CONTATOS - AGORA CORRETA */
 section[class="#contatos"] {
   margin: 40px 0;
   width: 100%;
@@ -75,9 +73,9 @@ section[class="#contatos"] h2 {
 .social-links a i:hover {
   color: var(--hover-bg);
   transform: scale(1.2);
+  cursor: url('../../assets/imagens/cursor/Normal\ Select\ 5.cur'), pointer;
 }
 
-/* IMAGEM CENTRALIZADA */
 main img {
   display: block;
   margin: 40px auto;

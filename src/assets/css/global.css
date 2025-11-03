@@ -50,6 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--fonte-principal, sans-serif);
+  cursor: url('../../assets/imagens/cursor/Normal\ Select\ 7.cur'), auto;
 }
 
 /* ===== ESTRUTURAS DE LAYOUT ===== */
