@@ -1,0 +1,30 @@
+.image-footer {
+    display: block;
+    margin: auto;
+    align-items: center;
+    width: 600px;
+    height: 300px;
+}
+
+.icons {
+    display: block;
+    margin: auto;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+}
+
+.icons-2 {
+    display: block;
+    margin: auto;
+    align-items: center;
+    width: 265px;
+    height: 250px;
+}
+
+.icons-3{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    align-self: flex-end;
+}

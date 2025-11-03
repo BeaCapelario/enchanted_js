@@ -1,6 +1,8 @@
 @import url("../components/variables.css");
 header {
-  background: var(--gradiente, linear-gradient(45deg, #667eea, #764ba2));
+  background-image:url(https://i.pinimg.com/originals/ce/31/0c/ce310c2f68850080fdcd49f5275e8416.gif) ;
+  background-repeat: no-repeat;
+  background-size:cover;
   color: var(--titulo, #333);
   padding: var(--espacamento-xl) 20px;
   text-align: center;
@@ -55,10 +57,11 @@ nav li {
   font-weight: bold;
 }
 
-
 /* Footer */
 footer {
-  background: var(--gradiente, linear-gradient(45deg, #764ba2, #667eea));
+  background-image:url(https://i.pinimg.com/originals/ce/31/0c/ce310c2f68850080fdcd49f5275e8416.gif) ;
+  background-repeat: no-repeat;
+  background-size:cover;
   color: var(--texto-secundario);
   text-align: center;
   box-shadow: 0 -5px 15px var(--sombra, rgba(0, 0, 0, 0.1));

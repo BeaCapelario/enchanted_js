@@ -47,6 +47,7 @@ html, body {
 }
 
 body {
+  background-color: var(#F3E4FF);
   display: flex;
   flex-direction: column;
   font-family: var(--fonte-principal, sans-serif);

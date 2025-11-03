@@ -29,17 +29,20 @@
   margin: 0 auto;
 }
 
-section[class="#contatos"] {
+.contatos {
   margin: 40px 0;
-  width: 100%;
+  width: fit-content;
+  background-color: #A585E0;
+  border-radius: 25px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-self: auto;
   text-align: center;
 }
 
-section[class="#contatos"] h2 {
+.contatos h2 {
   text-align: center;
   width: 100%;
   margin: 20px 0;
@@ -84,6 +87,8 @@ main img {
   border-radius: 12px;
 }
 
+
+
 @media (max-width: 768px) {
   .inicio {
     padding: 8px 16px 32px 16px;
@@ -117,7 +122,7 @@ main img {
     gap: 15px;
   }
   
-  section[class="#contatos"] h2 {
+  .contatos h2 {
     font-size: 28px;
   }
   
