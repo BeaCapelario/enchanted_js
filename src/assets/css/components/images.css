@@ -28,3 +28,11 @@
     display: flex;
     align-self: flex-end;
 }
+
+.divider{
+    width: 1000px;
+    height:100px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}

@@ -18,8 +18,9 @@
 }
 
 .basic-header {
-  background: var(--gradiente, linear-gradient(45deg, #667eea, #764ba2));
-  color: var(--titulo, #fff);
+  background-image:url(https://i.pinimg.com/originals/ce/31/0c/ce310c2f68850080fdcd49f5275e8416.gif) ;
+  background-repeat: no-repeat;
+  background-size:cover;
   padding: 48px 20px;
   text-align: center;
   box-shadow: 0 10px 20px var(--sombra, rgba(0, 0, 0, 0.1));

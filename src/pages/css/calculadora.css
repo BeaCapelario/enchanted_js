@@ -1,3 +1,22 @@
+@import url("../../assets/css/global.css");
+@import url("../../assets/css/components/basics-layout.css");
+:root {
+  --fonte-principal: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --fonte-titulo: "Arial", sans-serif;
+  --bg-principal: #f8f9fa;
+  --bg-secundario: #ffffff;
+  --titulo: #333333;
+  --sombra: rgba(0, 0, 0, 0.1);
+  --borda: #e0e0e0;
+  --botao-bg: #6c63ff;
+  --botao-texto: #ffffff;
+  --hover-bg: #5a52d5;
+  --accent: #f0f0f0;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +26,29 @@
 body {
   font-family: var(--fonte-principal);
   display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+  color: var(--titulo);
+  background-color: var(--bg-principal);
+}
+
+header {
+  background-color: var(--botao-bg);
+  color: var(--botao-texto);
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+
+main {
+  flex: 1; 
+  display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  color: var(--titulo);
+  padding: var(--spacing-lg);
 }
 
 .calculadora {
-  background: var(--bg-principal);
+  background: var(--bg-secundario);
   border-radius: 20px;
   padding: var(--spacing-lg);
   box-shadow: 0 10px 30px var(--sombra);
@@ -118,7 +152,36 @@ button:active {
   grid-column: span 2;
 }
 
-/* Responsividade */
+
+.btn-grid {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+}
+
+.btn-inicio {
+  background-color: var(--botao-bg);
+  color: var(--botao-texto);
+  border: none;
+  border-radius: 20px;
+  padding: 12px 24px;
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px var(--sombra);
+}
+
+.btn-inicio:hover {
+  background-color: var(--hover-bg);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--sombra);
+}
+
+
 @media (max-width: 768px) {
   .calculadora {
     max-width: 300px;
@@ -133,5 +196,10 @@ button:active {
   #display {
     height: 60px;
     font-size: 1.5rem;
+  }
+
+  .btn-grid {
+    flex-direction: column;
+    align-items: center;
   }
 }

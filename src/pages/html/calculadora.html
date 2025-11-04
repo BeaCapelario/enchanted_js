@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="../../assets/css/global.css">
     <link rel="stylesheet" href="../../assets/css/components/basics-layout.css">
     <link rel="stylesheet" href="../css/calculadora.css">
+
 </head>
 
 <body>
     <header>
         <h1>Calculadora</h1>
     </header>
-
+    <img class="icons-3" src="https://i.pinimg.com/originals/00/59/3d/00593dcb713478b402a877fa1669f8d2.gif" />
     <main>
-        <div class="calculadora">
+        <section class="calculadora">
             <input type="text" id="display" readonly>
             <div class="botoes">
                 <button onclick="limpar()">C</button>
@@ -41,7 +42,13 @@
                 <button onclick="adicionar('0')">0</button>
                 <button onclick="adicionar('.')">.</button>
             </div>
-        </div>
+        </section>
+
+        <section class="btn-grid">
+            <a class="btn-inicio" href="../html/funcoes-ex.html">Voltar</a>
+            <a class="btn-inicio" href="../../index.html">Início</a>
+        </section>
+        <img class="divider" src="../../assets/imagens/Dividers/tumblr_343df90033408e75bc7f7bdf4ba3d0b2_09f2e3bb_640.webp" />
     </main>
 
     <footer>

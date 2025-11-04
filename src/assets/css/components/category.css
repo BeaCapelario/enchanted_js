@@ -6,6 +6,9 @@
 @import url("../components/variables.css");
 
 .basic-header {
+  background-image:url(https://i.pinimg.com/originals/ce/31/0c/ce310c2f68850080fdcd49f5275e8416.gif) ;
+  background-repeat: no-repeat;
+  background-size:cover;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   display: block;
